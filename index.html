@@ -12,7 +12,7 @@
     color:white;
     
     }
-  #top{
+  .top{
     background-color:yellow;
     color:blue;
     text-align:center;
@@ -20,12 +20,9 @@
     line-height:50px;
 
     font-size:36px ;
-    border-bottom:1px solid yellow ;
+
     }
-   #top:visited{
-     color:#011e36;   
-      
-    }
+
     
    #stop {
      background-color:yellow;
@@ -103,7 +100,7 @@
     
     .ad{
       margin-left:80px;
-      border-bottom:1px solid grey;
+      
     }
     .and:hover{
         color:#011e36;
@@ -113,10 +110,18 @@
         background-color:white;
       
     }
+    .b{
+      border-bottom:1px solid blue;
+      
+    }
+    #sdbar:hover{
+      border:2px solid white;
+      
+    }
   </style>
 </head>
 <body>
-    <h1 id = 'top'><a href="https://en.wikipedia.org/wiki/Dar-e-Arqam_Schools">Dar-e-Arqam</a></h1>
+    <h1 class = 'top'><a href="https://en.wikipedia.org/wiki/Dar-e-Arqam_Schools">Dar-e-Arqam</a></h1>
     <h2 id ='stop'><a href="https://www.facebook.com/pages/Dare-Arqam-School-Sabzazar/246687895792992">(Sabzazar campus)</a></h2>
     <img id = 'img' src="data:image/png;base64,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">
     
@@ -136,24 +141,25 @@
         </p>
     </div>
 
-    <div id='cl'>
+    <div id='cl' class='b'>
         <h1 class='and'>Students</h1>
         <p class='ad'>A student’s life is certainly the most crucial phase in a person’s <br> life. The future of a person depends upon the student’s life.<br> Most noteworthy, it is the period of most learning in a person.<br>i Therefore, one must show the utmost dedicatbr <br>ion and seriousness as a student. This dedication and <br>seriousness are only possible if one becomes an ideal student.
         <br>Almost all parents want only the best for their children. Parents certainly <br>play a very important in their children’s life. Many children try to <br>be successful but lack the characteristics of being an ideal <br>student. So, are those children alone responsible for this?<br> The answer is a big no.
-      </p><p class='ad'>This is because parents significantly determine whether a student will be an <br>ideal student or not. Moreover, parents should understand that they in a<br> big way determine the overall personality and attitude of a child.<br> Furthermore, parents must make children realize the importance <br>of schools.
+      </p><h2>Impact through Parents:</h2><p class='ad'>This is because parents significantly determine whether a student will be an <br>ideal student or not. Moreover, parents should understand that they in a<br> big way determine the overall personality and attitude of a child.<br> Furthermore, parents must make children realize the importance <br>of schools.
           Probably many parents show the big picture to their children. Most parents teach <br>children the value of hard work and good marks. However, what these <br>parents don’t teach is how to be determined and motivated to do that hard work.<br> Most noteworthy, parents must work together with children<br> to help them become ideal students.</p>
-      <p class='ad'>First of all, an ideal student must have high ambition. Such a student sets<br> a high goal for himself in life. Furthermore, such a student performs well in his academics.<br> This is due to the passion and desire in him to learn<br>. Moreover, such a student also takes part in many extra-curricular activities.
+      <h2>An Ideal Student</h2><p class='ad'>First of all, an ideal student must have high ambition. Such a student sets<br> a high goal for himself in life. Furthermore, such a student performs well in his academics.<br> This is due to the passion and desire in him to learn.<br> Moreover, such a student also takes part in many extra-curricular activities.
                     <br>An ideal student is attentive by nature. He clearly understands the<br>An ideal student is attentive by nature. He clearly understands the lessons taught by his<br> teachers and adults. Furthermore, he is not neglectful of these lessons at the cost of simple pleasures of life.<br>
                     lessons taught by his teachers and adults. Furthermore, he is not neglectful<br> of these lessons at the cost of simple pleasures of life.
-                    <br>Another important characteristic of an ideal student is discipline and obedience.</p><p class='ad'><br> A student certainly obeys his parents, teachers, and elders<br>. Furthermore, such a student shows discipline in the day to day activities of life.<br>
+                    <br>Another important characteristic of an ideal student is discipline and obedience.</p><p class='ad'><br> A student certainly obeys his parents, teachers, and elders.<br> Furthermore, such a student shows discipline in the day to day activities of life.<br>
                     <br>An ideal student maintains discipline in all spheres of life, whether in family,<br> educational institution, or society. Consequently, such an individual <br>follows all the social and moral laws. Also, such a student does not get<br> carried away and always exercises self-control.
                     <br>The ideal student respects the value of time. He shows the utmost punctuality of time.</p><p class='ad'><br> Furthermore, he is never late for his classes or appointments.<br> Most noteworthy, he always does the right thing at the right time.<br>
                     <br>To be an ideal student, one must certainly be physically and mentally fit. <br>An ideal student regularly exercises. Furthermore, he indulges in playing sport on a regular basis.<br> Moreover, an ideal student is an avid reader<br> of books of knowledge. Therefore, he constantly tries to increase his knowledge.<br>
-                    <br>An ideal student has a scientific outlook on life.</p><p class='ad'> Moreover, an ideal student never accepts things at their <br>face value. Such a student always analyses the details. Most noteworthy,<br> such a student has a curious mind and asks questions.<br> He accepts something as truth only when proper evidence for it is available.<br>
+                    <br>An ideal student has a scientific outlook on <h3>Curious Mind</h3></p><p class='ad'> Moreover, an ideal student never accepts things at their <br>face value. Such a student always analyses the details. Most noteworthy,<br> such a student has a curious mind and asks questions.<br> He accepts something as truth only when proper evidence for it is available.<br>
                     <br>In conclusion, being an ideal student is an extremely important requirement for everyone.<br> If one becomes an ideal student then nothing can stop him from achieving success in life.<br> Ideal students will certainly lead to a successful future of the Nation.</p>
-    </div>
+                    <h2>Conclusion</h2><p class='ad'>And we are here to make your child an ideal student.<br> Because our country needs the ideal students.<br> We want your child to pass the exams of this world<br> and the world here after.<br>And we all know that this is the real success or the complete success.</p>
+  </div>
 
-    <div id='zx'>
+    <div id='zx' class='b'>
         <h1 class='and'>Teachers</h1>
         <p class='ad'>Teachers are a special blessing from God to us.<br> 
           They are the ones who build a good nation and make the world a better place.<br> 
@@ -171,7 +177,7 @@
           They prepare their plan of action every day to ensure maximum productivity.<br>
           Teachers have a lot of knowledge about everything, specifically in the subject they specialize in.<br>
           A good teacher expands their knowledge continues to provide good answers to their students.<br>
-          Similarly, a good teacher is like a friend that helps us in all our troubles.<br></p><p class='ad'
+          Similarly, a good teacher is like a friend that helps us in all our troubles.<br></p><h2>A Good Teacher</h2><p class='ad'>
           A good teacher creates their individual learning process which is unique and not mainstream.<br>
           This makes the students learn the subject in a better manner.<br>
           In other words, a good teacher ensures their students are learning efficiently and scoring good marks.<br>
@@ -185,7 +191,7 @@
            and they listen to their teachers more than their parents.<br>
            This shows the significance and impact of a teacher.</p>
 
-         <p class='ad'>When we become older and enter college, teachers become our friends.<br>
+         <h2>Role of a Teacher</h2><p class='ad'>When we become older and enter college, teachers become our friends.<br>
            Some even become our role models. They inspire us to do great things in life.<br>
            We learn how to be selfless by teachers.<br>
            Teachers unknowingly also teach very important lessons to a student.<br>
@@ -195,17 +201,20 @@
            They adapt into various roles as and when the need arises.<br>
            They become our friends when we are sad, they care for us like our parents when we are hurt. <br>
            Thus, we see how great a teacher impacts a student’s life and shapes it.</p>
+          <h2>Concusion</h2><p class='ad'>You can trust our teachers. They are highly qualified.<br> And are always here to help your child.<br> They are here to help your child on the way to<br> success of this world and the world hereafter.</p>
 
     </div>
 
-    <div id='qe'>
+    <div id='qe' class='b'>
         <h1 class='and'>Workers</h1>
         <p class='ad'>There is a saying that there is nothing new under the sun as <br>far as the calamities of the world go.
            This saying may very well be true, but because<br> of an increasingly larger population,
           school-aged children of today are<br> forced to face more problems much earlier than their predecessors did.<br>
           Because today’s children have so much to face, it is important for them<br> to have a good support base at home as well as at school.<br>
           Together with other school-based mental health professionals,<br> school social workers are expected to support
-          the needs<br> of at-risk students attending public schools (Altshuler & Webb, 2009).</p><p class='ad'>
+          the needs<br> of at-risk students attending public schools (Altshuler & Webb, 2009).
+          
+       </p><p class='ad'>
           In order to provide children with the support they need for positive development,<br>
           school systems need social workers that have been properly trained in choosing the<br>
           correct intervention method and in proper service delivery.<br>
@@ -213,7 +222,7 @@
           Early intervention to reduce or<br> eliminate stress; within or between individuals or groups;<br>
           problem-solving services to students, parents, school personnel,<br> or community agencies;
           early identification of students at risk; and work<br> with various groups in school to develop coping
-          , social, and decision-making skills ().</p><p class='ad'> Social workers have been providing services to public schools for over a century,
+          , social, and decision-making skills .<h2>Servises of Social Worker</h2></p><p class='ad'> Social workers have been providing services to public schools for over a century,
           <br>and there are many ways school social workers can utilize their knowledge, skills,<br>
           and values to improve the lives of students. The services that workers provide have <br>
           evolved over time but have maintained an overall purpose of<br> addressing environmental
@@ -227,7 +236,7 @@
           increased risk for aggressive and antisocial<br> behavior in youth and adolescence (Hudley & Novak, 2007).<br>
           It is up to today’s school social workers to find and implement more<br> effective strategies for decreasing and
           eliminating these behaviors,<br> especially now that behaving aggressively has become an <br>
-          essentially automatic responseto stressors in some youths.</p><p class='ad' id='bottom'>
+          essentially automatic responseto stressors in some youths.<h2>Role in Students in Student Achievments</h3></p><p class='ad' id='bottom'>
           Social workers can assist students in dealing with stress or<br> emotional problems by working directly 
           with the children and their families.<br> By acting as institutional and cultural brokers between families<br>
           and their children’s school, social workers are filling a very important void.<br> This is especially significant
@@ -236,6 +245,7 @@
           involved effectively in their children’s schooling, student achievement typically improves<br> 
           (Alameda-Lawson, Lawson & Lawson, 2010).<br> Because school success is critical to future life tasks, interventions<br>
           are worth our attention.</p>
+          <h2>Conclusion</h2><p class='ad'>Our staff is working 24 hours a day, 7 days a week. To accomplish our task,<br> which you know is the success in this world and the world hereafter.<br> Inshallah Allah will help us on the to accomplish it</p>
     </div>
 
 
