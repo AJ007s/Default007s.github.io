@@ -8,7 +8,7 @@
     
   body{
     font-family: 'Varela Round',sans-serif ;    
-    background-color:yellow ;
+        background-color:rgb(250,248,153);
     color:black;
     
     }
@@ -23,10 +23,11 @@
     }
    #stop {
      background-color:yellow;
+     border:1px solid rgb(60,62,171);
+     border-top:0px ;
      text-align:center;
      color:blue;
      margin:-24px 500px 1px 500px;
-     border:1px solid rgb(60,62,171);
      text-decoration:none
     }
     #img {
@@ -41,7 +42,7 @@
             padding:4px 4px 4px 10px;
             margin-top:-280px;
             float:right;
-            margin-left:1050px;
+            margin-left:760px;
             background-color:yellow;
     }
     #bxhead{
@@ -49,8 +50,8 @@
            
             
     }
-    .info{
-            
+    .info:hover{
+           background-color:yellow; 
     }
    
     .hd1{
@@ -80,14 +81,13 @@
       border-bottom:1px solid grey;
     }
     .and:hover{
+        
         padding:20px;
         border-top:1px solid grey;
         margin:1px;
         background-color:rgb(250,248,153);
       
     }
-
-
   </style>
 </head>
 <body>
@@ -97,10 +97,11 @@
     
     <div id = 'sdbar'>
         <h1 id="bxhead">Jump to</h1>
-        <a href="#cl"><h3 class ='info' id = 'st'>Students</h3></a>
-        <a href='#zx'><h3 class ='info' id = 'tc'>Teachers</h3></a>
-        <a href='#qe'><h3 class ='info' id = 'wk'>Workers</h3></a>
-        <a href='#hg'><h3 class ='info' id = 'sc'>Sections</h3></a>
+        <a href="#cl"><button id='b1' class='info'><h3 class ='info' id = 'st'>Students</h3></button></a>
+        <a href='#zx'><button id='b2' class='info'><h3 class ='info' id = 'tc'>Teachers</h3></button></a>
+        <a href='#qe'><button id='b3' class='info'><h3 class ='info' id = 'wk'>Workers</h3></button></a>
+        <a href="#top"><button id='b4' class ='info'><h3>To the top</h3></button></a>
+      <a href="#bottom"><button id='b5' class ='info'><h3>To the bottom</h3></button></a>
     </div>
   
     <div class ='quote' >
@@ -201,7 +202,7 @@
           increased risk for aggressive and antisocial<br> behavior in youth and adolescence (Hudley & Novak, 2007).<br>
           It is up to today’s school social workers to find and implement more<br> effective strategies for decreasing and
           eliminating these behaviors,<br> especially now that behaving aggressively has become an <br>
-          essentially automatic responseto stressors in some youths.</p><p class='ad'>
+          essentially automatic responseto stressors in some youths.</p><p class='ad' id='bottom'>
           Social workers can assist students in dealing with stress or<br> emotional problems by working directly 
           with the children and their families.<br> By acting as institutional and cultural brokers between families<br>
           and their children’s school, social workers are filling a very important void.<br> This is especially significant
@@ -211,12 +212,7 @@
           (Alameda-Lawson, Lawson & Lawson, 2010).<br> Because school success is critical to future life tasks, interventions<br>
           are worth our attention.</p>
     </div>
-    <div id='hg'>
-      <h1 class='and'>Sections</h1>
-      
-      
-      
-    </div>
+
 
 
 </body>
@@ -226,5 +222,3 @@
 
 </body>
 </html>
-
-
